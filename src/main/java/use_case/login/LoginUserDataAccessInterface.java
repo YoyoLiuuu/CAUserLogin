@@ -27,5 +27,15 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Set the user to user that is accessing.
+     * @param name the user that is logged in.
+     */
     void setCurrentUser(String name);
+
+    /**
+     * Placeholder getter, not used in example.
+     * @return Null because this is just inherited and needs to be implemented.
+     */
+    String getCurrentUser();
 }
